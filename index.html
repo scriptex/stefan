@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Stefan Atanasov</title>
+		<style>
+			*,
+			*::before,
+			*::after {
+				box-sizing: border-box;
+			}
+
+			html,
+			body {
+				height: 100%;
+			}
+
+			body {
+				font-family: sans-serif;
+				font-size: 1rem;
+				line-height: 1.4;
+				text-align: center;
+
+				margin: 0;
+			}
+
+			.background,
+			li a {
+				background-repeat: no-repeat;
+				background-position: 50% 50%;
+				background-size: cover;
+			}
+
+			.background {
+				position: fixed;
+				top: 0;
+				right: 0;
+				bottom: 0;
+				left: 0;
+				z-index: -1;
+				filter: blur(4px);
+			}
+
+			.container {
+				min-height: 100vh;
+				display: flex;
+				flex-flow: column wrap;
+				align-items: center;
+				align-content: center;
+				justify-content: center;
+				gap: 1rem;
+				padding: 1rem;
+			}
+
+			h1,
+			h2,
+			p,
+			li,
+			li a span {
+				padding: 0.5rem 1rem;
+				background-color: rgba(255, 255, 255, 0.8);
+				border-radius: 0.5em;
+			}
+
+			h1 {
+				font-size: 3rem;
+				margin: 0;
+			}
+
+			h2 {
+				font-size: 2rem;
+				margin: 0;
+			}
+
+			p {
+				margin: 0;
+			}
+
+			ul {
+				display: flex;
+				flex-flow: row wrap;
+				align-items: stretch;
+				justify-content: space-between;
+				padding: 0;
+				margin: 0;
+				list-style: none outside none;
+			}
+
+			li {
+				padding: 1rem;
+			}
+
+			li a {
+				text-transform: uppercase;
+				color: inherit;
+				display: block;
+				position: relative;
+				aspect-ratio: 1/1;
+				padding: 2rem 0;
+			}
+
+			li a span {
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				transition: background-color 0.4s ease-in-out;
+			}
+
+			li a:hover span {
+				background-color: #fff;
+			}
+
+			li p {
+				margin: 1em 0 0;
+			}
+
+			@media (max-width: 1023px) {
+				body {
+					display: block;
+					padding: 1rem;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div class="background" style="background-image: url(/images/ivan-aleksic-PDRFeeDniCk-unsplash.jpg)"></div>
+
+		<div class="container">
+			<h1>Stefan Atanasov</h1>
+
+			<p>Student, 4th grade</p>
+
+			<h2>Projects:</h2>
+
+			<ul>
+				<li>
+					<a
+						href="/projects/math-quiz"
+						target="_blank"
+						rel="noopener noreferrer"
+						style="background-image: url(/images/thisisengineering-GzDrm7SYQ0g-unsplash.jpg)"
+					>
+						<span>Math Quiz</span>
+					</a>
+
+					<p>Can you pass the quiz without any errors?</p>
+				</li>
+			</ul>
+		</div>
+	</body>
+</html>
